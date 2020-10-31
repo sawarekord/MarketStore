@@ -12,8 +12,8 @@ namespace MarketStore
         {
             try
             {
-                var bronzeCustomer = new Customer(-1);
-                DiscountCard bronzeCard = new BronzeCard(null);
+                var bronzeCustomer = new Customer(0);
+                DiscountCard bronzeCard = new BronzeCard(bronzeCustomer);
 
                 Console.WriteLine($"Bronze: Turnover ${bronzeCustomer.Turnover}");
                 bronzeCard.WriteOutput(150f);
